@@ -1,0 +1,44 @@
+@mixin footer ($width,$height,$font) {
+    height: $height;
+    width: $width;
+    font-weight: $font;
+  }
+  footer {
+    @include footer (100%,100%,bold)
+  }
+
+   /* Mapas */
+
+
+   $EstilosIcon: (
+    alto: 1.5rem,
+    ancho: 1.5rem,
+    margen-izq: 1rem,
+    margen-dcho: 1rem,
+  );
+
+.icon {
+    height: map-get($map: $EstilosIcon, $key:alto);
+    width: map-get($map: $EstilosIcon, $key:ancho);
+    margin-left: map-get($map: $EstilosIcon, $key:margen-izq);
+    margin-right: map-get($map: $EstilosIcon, $key:margen-dcho);
+
+  }
+
+
+$redes:(
+    fb:#385697,
+    ig:#bd298e,
+    tw:#21aaff, 
+    wp:#14b54c,
+    gmail:#FF0000, 
+    ubicacion:#000000,
+);
+
+@each $red, $color in $redes {
+    .social-#{$red}:hover{
+    filter: drop-shadow(5px 2px 2px $color);
+}
+}
+
+/* Fin Mapas */

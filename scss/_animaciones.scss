@@ -1,0 +1,17 @@
+nav {
+    img {
+        &:hover {
+            width: 110%;
+            height: 110%;          
+        }
+    }
+}
+
+
+#gmail {
+    color: $facu;
+    &:hover {
+        color: $red-600;
+    }
+}
+

@@ -1,0 +1,57 @@
+section#contact {
+    background-color: #212529;
+    background-image: url("../img/practica/justicia.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  
+    .section-heading {
+      color: white;
+    }
+  
+    form#contactForm {
+      .form-group {
+        margin-bottom: 1.5rem;
+  
+        input, textarea {
+          padding: 1.25rem;
+        }
+  
+        input.form-control {
+          height: auto;
+        }
+      }
+  
+      .form-group-textarea {
+        height: 100%;
+  
+        textarea {
+          height: 100%;
+          min-height: 10rem;
+        }
+      }
+  
+      p.help-block {
+        margin: 0;
+      }
+  
+      .form-control:focus {
+        border-color: #ffc800;
+        box-shadow: none;
+      }
+  
+      ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+        font-weight: 700;
+        color: #ced4da;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    section#contact {
+      background-image: url("#");
+    }
+
+
+  }

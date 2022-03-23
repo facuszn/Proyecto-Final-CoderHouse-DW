@@ -1,0 +1,38 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  nav, footer {
+    font-size: 18px;
+}
+ p {
+     text-align: justify;
+     font-size: 1.1rem;
+     span {
+         font-weight: bold;
+         font-style: italic;
+     }
+ }
+
+ main {
+     div {
+        ul {
+            list-style-type: circle;
+            li {
+                text-transform: capitalize;
+                span {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+   
